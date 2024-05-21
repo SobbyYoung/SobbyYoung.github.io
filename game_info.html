@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyacinata: Game Info</title>
+  <link rel="stylesheet" type =" text/css" href="main.css">
+    <link rel="icon" type="image/x-icon" href="favicon_32x32.png">
+</head>
+<body>
+    
+    <header> 
+        <a href="index.html" class="nohover"><img src="logo.png" alt="Hyacinata Logo"></a>
+        <a href="index.html" class="nohover"><h1>HYACINATA</h1></a>
+        <nav>
+            <ul>
+            <li><a href="news_page.html">News</a></li>
+            <li><a href="game_info.html">Game Info</a></li>
+            <li><a href="https://drive.google.com/file/d/1zyPs2EvcmGPL6MJzhh61-yc8Jiku1_-C/view?usp=sharing">Play Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section class="gameinfo">
+            <a class="playnow topplaybtn nohover" href="https://drive.google.com/file/d/1zyPs2EvcmGPL6MJzhh61-yc8Jiku1_-C/view?usp=sharing" target="_blank">PLAY NOW</a>
+        </section>
+            
+        
+        <h2 class="headers">WORLD</h2>
+            <hr class="worldhr">
+        
+         <section class="hyacinata">
+            <section>
+            <h2 class="worldnames">HYACINATA</h2>
+                <hr>
+                <div class="worlddesc">
+                <p> The plant-like organisms that have invaded this planet are almost entirely made up of flowers.  They work together to devour the nutrients they need from the soil. However, they leave little to no nutrients for other species. Only small shrubs and fungi manage to live of what is left. Trees are non-existent, having withered away after years of malnourishment. The planet's global flower, Hyacinths, were able to adapt to the lack of nutrients in the soil.  Now, they exist among the many types of nutrient-eating flowers on Hyacinata.</p>
+                </div>
+            </section>
+             <img src="homepage_img_banner.png" alt="hyacinath field image" class="worldimg h7vimg">
+        </section>
+
+        
+        <section class="serethea">
+            <section>
+            <h2 class="worldnames">SERETHEA</h2>
+                <hr>
+                <div class="worlddesc">      
+                <p> Serethea is a spaceship currently in space orbiting Hyacinata. Engineers originally built it for outerspace expeditions, but it was quickly redesigned for a way to evacuate from the new creatures of Hyacinata. World leaders and ordinary citizens live here, safe from danger.</p>
+
+                <p> The next crew-generation for the Miracle Team is dispatched from Serethea every six months. Four volunteers are selected and will be flown down to Hyacinata for their new work.</p>
+                </div>
+            </section>
+            <img src="about_img.png" alt="serethea ship image" class="worldimg">
+        </section>
+
+        <h2 class="headers">CHARACTERS</h2>
+            <hr class="newshr">
+        <section class="characters">
+            <img src="junshi_ano.png" alt="character name image" class="charimg">
+            
+            <div class="charbio">
+                <h3 class="charname">Character Name</h3> <hr class="hrchar">
+                <p class="bio">Description/biography of character.</p>
+            
+            
+            <div class="showcase">
+                <video width="335" height="280" controls>
+                    <source src="h7v_vid.mp4" type="video/mp4">
+                </video>
+                <video width="335" height="280" controls>
+                    <source src="h7v_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+            
+            <ul class="charbtn">
+                <li class="charbtn"><img src="up_arrow.png" alt="character icon"></li>
+                <li class="charbtn"><a><img src="tridian_icon.png" alt="character icon"></a></li>
+                <li class="charbtn"><a><img src="junshi_icon.png" alt="character icon"></a></li>
+                <li class="charbtn"><a><img src="wynson_icon.png" alt="character icon"></a></li>
+                <li class="charbtn"><img src="down_arrow.png" alt="character icon"></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <img src="logo.png" style="height:100px; width:100px;">
+        <article>
+            <a class="footer" href="link">Privacy policy</a>
+            <a class="footer" href="link">terms of service</a>
+        </article>
+        <p>Copyright © 2024 HYACINATA. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the elements for character descriptions
+        var charDescription = document.querySelector('.bio');
+        var charName = document.querySelector('h3.charname');
+        var charImg = document.querySelector('section img.charimg');
+        
+        // Get the icon elements
+        var tridianIcon = document.querySelector('img[src="tridian_icon.png"]');
+        var junshiIcon = document.querySelector('img[src="junshi_icon.png"]');
+        var wynsonIcon = document.querySelector('img[src="wynson_icon.png"]');
+        
+        // Add click event listeners to the icon elements
+        tridianIcon.addEventListener('click', function() {
+            // Update the description to be the Tridian description
+            charDescription.textContent = "Description/biography of Tridian.";
+            charName.textContent = "Tridian Wrayburn";
+            charImg.src = "tridian_wrayburn.png";
+            
+        });
+        
+        junshiIcon.addEventListener('click', function() {
+            // Update the description to be the Junshi description
+            charDescription.textContent = "Description/biography of Junshi.";
+            charName.textContent = "Junshi Ano";
+            charImg.src = "junshi_ano.png";
+        });
+        
+        wynsonIcon.addEventListener('click', function() {
+            // Update the description to be the Wynson description
+            charDescription.textContent = "Description/biography of Wynson.";
+            charName.textContent = "Wynson Briarvad";
+            charImg.src = "wynson_briarvad.png";
+        });
+    });
+</script>
+
+</body>
+</html>
